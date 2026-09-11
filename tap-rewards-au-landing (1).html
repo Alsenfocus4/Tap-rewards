@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tap Rewards — Australia Only</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--violet: #2E1065;
+--violet-deep: #1D0A42;
+--cyan: #22D3EE;
+--coral: #FF6B9D;
+--gold: #F5B942;
+--cream: #FDF9F3;
+--ink-soft: #E8DFFD;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+margin:0;
+background:var(--violet-deep);
+background-image:
+radial-gradient(circle at 15% 10%, rgba(255,107,157,0.25), transparent 40%),
+radial-gradient(circle at 85% 25%, rgba(34,211,238,0.22), transparent 45%);
+color:var(--cream);
+font-family:'Inter', sans-serif;
+line-height:1.6;
+}
+
+h1, h2, .display{
+font-family:'Fredoka', sans-serif;
+color:var(--cream);
+margin:0;
+}
+
+.wrap{
+max-width:640px;
+margin:0 auto;
+padding:0 22px;
+}
+
+.topbar{
+padding:18px 0;
+border-bottom:1px solid rgba(255,255,255,0.08);
+}
+.topbar .wrap{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+.topbar .brand{
+font-family:'Fredoka', sans-serif;
+font-weight:600;
+font-size:1.05rem;
+}
+.topbar .brand .dot{ color:var(--gold); }
+.topbar .region{
+font-size:0.78rem;
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.15);
+padding:5px 11px;
+border-radius:999px;
+}
+
+.hero{
+padding:52px 0 34px;
+text-align:center;
+}
+.hero h1{
+font-size:2.3rem;
+line-height:1.16;
+max-width:15ch;
+margin:0 auto;
+}
+.hero .lede{
+margin:18px auto 0;
+max-width:44ch;
+color:var(--ink-soft);
+font-size:1.02rem;
+}
+
+.chest-card{
+margin:32px auto 0;
+max-width:280px;
+background:linear-gradient(160deg, #3D1A78, #24104F);
+border:1px solid rgba(255,255,255,0.12);
+border-radius:20px;
+padding:30px 20px;
+position:relative;
+overflow:hidden;
+}
+.chest-card::before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 30% 20%, rgba(255,107,157,0.35), transparent 55%),
+radial-gradient(circle at 75% 75%, rgba(34,211,238,0.3), transparent 50%);
+}
+.chest-emoji{
+font-size:3.4rem;
+position:relative;
+}
+.chest-card .cap{
+position:relative;
+margin-top:10px;
+font-size:0.82rem;
+color:var(--ink-soft);
+}
+
+.cta-block{
+margin-top:36px;
+}
+.btn{
+display:inline-block;
+background:linear-gradient(90deg, var(--coral), var(--gold));
+color:var(--violet-deep);
+font-family:'Fredoka', sans-serif;
+font-weight:600;
+font-size:1.08rem;
+padding:16px 38px;
+text-decoration:none;
+border-radius:999px;
+box-shadow:0 6px 0 rgba(0,0,0,0.25);
+transition:transform .12s ease;
+}
+.btn:hover{ transform:translateY(-2px); }
+.cta-note{
+margin-top:14px;
+font-size:0.82rem;
+color:var(--ink-soft);
+}
+
+.section{
+padding:44px 0;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+.section h2{
+font-size:1.4rem;
+text-align:center;
+margin-bottom:26px;
+}
+.steps{
+display:grid;
+gap:16px;
+}
+.step{
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.1);
+border-radius:14px;
+padding:18px 20px;
+}
+.step .tag{
+font-family:'Fredoka', sans-serif;
+font-size:0.78rem;
+color:var(--cyan);
+margin-bottom:6px;
+}
+.step p{
+margin:0;
+color:var(--ink-soft);
+font-size:0.92rem;
+}
+.step strong{ color:var(--cream); }
+
+.disclosure{
+padding:34px 0 54px;
+border-top:1px solid rgba(255,255,255,0.08);
+}
+.disclosure .flag{
+display:inline-block;
+margin-bottom:12px;
+font-size:0.75rem;
+color:var(--coral);
+border:1px solid var(--coral);
+padding:4px 10px;
+border-radius:999px;
+}
+.disclosure h3{
+font-family:'Fredoka', sans-serif;
+font-size:1rem;
+margin-bottom:8px;
+color:var(--cream);
+}
+.disclosure p{
+font-size:0.84rem;
+color:var(--ink-soft);
+max-width:56ch;
+}
+
+footer{
+background:var(--violet-deep);
+border-top:1px solid rgba(255,255,255,0.08);
+color:rgba(232,223,253,0.5);
+font-size:0.78rem;
+padding:20px 0 28px;
+text-align:center;
+}
+
+@media (max-width:520px){
+.hero h1{ font-size:1.9rem; }
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+<div class="wrap">
+<div class="brand">Tap<span class="dot">•</span>Rewards</div>
+<div class="region">🇦🇺 Australia only</div>
+</div>
+</div>
+
+<div class="hero">
+<div class="wrap">
+<h1>A quick tap-reward promotion, running for Australian visitors</h1>
+<p class="lede">This spot links to a short interactive promotion from a third-party advertiser. It takes under two minutes and asks for your email to register.</p>
+
+<div class="chest-card">
+<div class="chest-emoji">🎁</div>
+<div class="cap">Interactive reward reveal on the advertiser's page</div>
+</div>
+
+<div class="cta-block">
+<a class="btn" href="https://singingfiles.com/show.php?l=0&u=1568667&id=73376" target="_blank" rel="noopener">See my reward</a>
+<div class="cta-note">Australia (AU) residents only · Email required</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="wrap">
+<h2>How it works</h2>
+<div class="steps">
+<div class="step">
+<div class="tag">Step 1</div>
+<p><strong>Confirm you're in Australia.</strong> This promotion is only available to AU visitors — the advertiser checks this automatically.</p>
+</div>
+<div class="step">
+<div class="tag">Step 2</div>
+<p><strong>Register with your email.</strong> You'll land on the advertiser's own page to enter your details under their terms.</p>
+</div>
+<div class="step">
+<div class="tag">Step 3</div>
+<p><strong>Follow their instructions to finish.</strong> Any reward, its value, and how to claim it are set entirely by the advertiser, not by this page.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="disclosure">
+<div class="wrap">
+<span class="flag">Advertising disclosure</span>
+<h3>What you should know before you click</h3>
+<p>This page is a paid advertising placement and is not itself the advertiser. It links out to a third party's registration page, and we don't control that page's content, terms, or whether any reward is issued — that's entirely up to the advertiser's own terms, which you should read before entering any information. Availability and payout can change without notice, and this is not a guarantee of a prize.</p>
+</div>
+</div>
+
+<footer>
+<div class="wrap">
+© 2026 Tap Rewards. Not affiliated with or endorsed by any brand referenced on the advertiser's page.
+</div>
+</footer>
+
+</body>
+</html>
